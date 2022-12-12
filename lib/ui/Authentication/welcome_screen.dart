@@ -3,6 +3,7 @@ import 'package:lottie/lottie.dart';
 import 'package:nb_utils/nb_utils.dart';
 import 'package:quiz_academy/style/app_colors.dart';
 import 'package:quiz_academy/ui/Authentication/sign_in.dart';
+import 'package:quiz_academy/ui/Authentication/sign_up.dart';
 
 import '../../style/constant.dart';
 import '../../widgets/button_global.dart';
@@ -37,17 +38,16 @@ class WelcomeScreen extends StatelessWidget {
               buttonText: 'Sign In',
               buttonTextColor: Colors.white,
               buttonDecoration: myButtonDecoration,
-              onPressed: ()=> const SignIn().launch(context),
+              onPressed: ()=> const SignIn().launch(context, isNewTask: true),
             ),
             SizedBox(height: 10.0,),
             ButtonGlobal(
               buttonText: 'Sign Up',
               buttonTextColor: AppColor.titleColor,
               buttonDecoration: myButtonDecoration.copyWith(color: Colors.white),
-              onPressed: (){
-
-              },
+              onPressed: () => const SignUp().launch(context, isNewTask: true),
             ),
+
           ],
         ),
       ),
