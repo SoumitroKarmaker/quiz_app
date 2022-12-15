@@ -5,6 +5,8 @@ import 'package:quiz_academy/style/app_colors.dart';
 import 'package:quiz_academy/style/constant.dart';
 import 'package:quiz_academy/widgets/button_global.dart';
 
+import '../home.dart';
+
 class SignUp extends StatefulWidget {
   const SignUp({Key? key}) : super(key: key);
 
@@ -61,7 +63,7 @@ class _SignUpState extends State<SignUp> {
                     buttonText: 'Sign Up',
                     buttonDecoration: myButtonDecoration,
                     buttonTextColor: Colors.white,
-                    onPressed: () {}),
+                    onPressed: () => Home().launch(context)),
               ],
             ),
           ),
