@@ -63,7 +63,7 @@ class _SignUpState extends State<SignUp> {
                     buttonText: 'Sign Up',
                     buttonDecoration: myButtonDecoration,
                     buttonTextColor: Colors.white,
-                    onPressed: () => Home().launch(context)),
+                    onPressed: () => Home().launch(context, isNewTask: true)),
               ],
             ),
           ),

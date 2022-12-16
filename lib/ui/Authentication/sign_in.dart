@@ -7,6 +7,8 @@ import 'package:quiz_academy/style/constant.dart';
 import 'package:quiz_academy/ui/Authentication/sign_up.dart';
 import 'package:quiz_academy/widgets/button_global.dart';
 
+import '../home.dart';
+
 class SignIn extends StatefulWidget {
   const SignIn({Key? key}) : super(key: key);
 
@@ -64,7 +66,7 @@ class _SignInState extends State<SignIn> {
                     buttonText: 'Sign In',
                     buttonDecoration: myButtonDecoration,
                     buttonTextColor: Colors.white,
-                    onPressed: () {}),
+                    onPressed: () => Home().launch(context, isNewTask: true)),
                 SizedBox(
                   height: 20.0,
                 ),

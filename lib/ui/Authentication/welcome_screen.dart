@@ -45,7 +45,7 @@ class WelcomeScreen extends StatelessWidget {
               buttonText: 'Sign Up',
               buttonTextColor: AppColor.titleColor,
               buttonDecoration: myButtonDecoration.copyWith(color: Colors.white),
-              onPressed: () => const SignUp().launch(context, isNewTask: true),
+              onPressed: () => const SignUp().launch(context,isNewTask: true),
             ),
 
           ],
